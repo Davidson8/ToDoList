@@ -89,7 +89,6 @@ h1, h2, h3, p, input, textarea, button {
 } 
 
 .container {
-    width: 1160px;
     margin: 0 auto;
 }
 
@@ -191,7 +190,7 @@ h1, h2, h3, p, input, textarea, button {
     margin: 0px auto;
     background-color: rgba(255, 255, 255, 0.8);
     box-shadow: 0 0 10px #b48cbb, 0 0 20px #b48cbb;
-    width: 800px;
+    width: 750px;
     padding: 15px;
     border-radius: 25px;
     margin-bottom: 30px;
@@ -231,4 +230,46 @@ h1, h2, h3, p, input, textarea, button {
 
 .tasks__completed:hover {
     border-radius: 20px;
+}
+
+@media (max-width: 767.98px) {
+    .tasks__task {
+        width: 90%;
+    }
+}
+
+@media (max-width: 575.98px) {
+    
+    .header__title {
+        font-size: 46px;
+    }
+    .newTask__content{
+        width: 90%;
+    }
+    
+    .tasks__text {
+        font-size: 32px;
+    }
+
+    .tasks__task {
+        display: block;
+    }
+
+    .tasks__title, .tasks__descripshion {
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .tasks__descripshion{
+        padding-top: 10px;
+    }
+
+    .tasks__button{
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .newTask__title,.newTask__descripshion {
+        width: 80%;
+    }
 }
