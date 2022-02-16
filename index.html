@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+    </style>
+    <title>ToDoList</title>
+</head>
+
+<body>
+    <main>
+
+        <header class="header">
+            <div class="container">
+                <div class="header__content">
+                    <img class="header__img" src="https://img.icons8.com/glyph-neue/64/000000/todo-list.png" />
+                    <h1 class="header__title">ToDoList</h1>
+                </div>
+            </div>
+        </header>
+
+        <section class="newTask">
+            <div class="container">
+                <div class="newTask__content">
+                    <input class="newTask__title" type="text" placeholder="Заголовок">
+                    <textarea class="newTask__descripshion" name="descripshion" placeholder="Описание"></textarea>
+                    <button class="newTask__btn">Добавить</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="tasks">
+            <div class="container">
+                <div class="tasks__content">
+                    <div class="tasks__text">
+                        <h2>Список задач</h2>
+                    </div>
+                    <div class="tasks__task">
+                        <p class="tasks__title">Заголовок</p>
+                        <p class="tasks__descripshion">Описание</p>
+                        <div class="tasks__button">
+                            <a class="tasks__completed tasks__btn" href="#">
+                                <img src="https://img.icons8.com/nolan/26/realtime-protection.png" />
+                            </a>
+                            <a class="tasks__del tasks__btn" href="#">
+                                <img src="https://img.icons8.com/nolan/26/recycle-bin.png" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="tasks__task">
+                        <p class="tasks__title">Заголовок</p>
+                        <p class="tasks__descripshion">Описание</p>
+                        <div class="tasks__button">
+                            <a class="tasks__completed tasks__btn" href="#">
+                                <img src="https://img.icons8.com/nolan/26/realtime-protection.png" />
+                            </a>
+                            <a class="tasks__del tasks__btn" href="#">
+                                <img src="https://img.icons8.com/nolan/26/recycle-bin.png" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="tasks__task">
+                        <p class="tasks__title">Заголовок</p>
+                        <p class="tasks__descripshion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia
+                            nihil mollitia suscipit explicabo eius ipsum recusandae voluptatibus sit id quis assumenda
+                            corrupti blanditiis, laborum eum est. Nostrum eaque explicabo molestias!</p>
+                        <div class="tasks__button">
+                            <a class="tasks__completed tasks__btn" href="#">
+                                <img src="https://img.icons8.com/nolan/26/realtime-protection.png" />
+                            </a>
+                            <a class="tasks__del tasks__btn" href="#">
+                                <img src="https://img.icons8.com/nolan/26/recycle-bin.png" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    </div>
+</body>
+
+</html>
