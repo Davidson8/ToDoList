@@ -3,7 +3,7 @@ const deskTaskTextarea = document.querySelector('.newTask__descripshion');
 const addTaskBtn = document.querySelector('.newTask__btn');
 const taskContent = document.querySelector('.tasks__content');
 const taskDone = document.querySelector('.tasks__done');
-const unfulfilled =  document.querySelector('.tasks__unfulfilled');
+const unfulfilled = document.querySelector('.tasks__unfulfilled');
 
 //Макссив данных
 let tasks;
@@ -81,11 +81,13 @@ const completeTask = index => {
 
 //При нажатии конопки происходит отправка объекта в массив
 addTaskBtn.addEventListener('click', () => {
-    tasks.push(new Task(titleTaskInput.value, deskTaskTextarea.value));
-    updeteLocal();
-    fillHtmlList();
-    titleTaskInput.value = '';
-    deskTaskTextarea.value = '';
+    if (titleTaskInput.value !== '' && deskTaskTextarea.value !== '') {
+        tasks.push(new Task(titleTaskInput.value,deskTaskTextarea.value));
+        updeteLocal();
+        fillHtmlList();
+        titleTaskInput.value = '';
+        deskTaskTextarea.value = '';
+    }
 })
 
 //Удаление
