@@ -97,5 +97,12 @@ const deleteTask = index => {
         tasks.splice(index, 1);
         updeteLocal();
         fillHtmlList();
+        reloadTask();
     }, 500);
+}
+
+//Обновление страницы после последнего удаления Task из массива
+const reloadTask = () => {
+    if (tasks == 0)
+    location.reload()
 }
